@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 const ButtonWrapper = styled.div`
   display: flex;
-  justify-content: center; /* Wyśrodkuj przyciski w poziomie */
-  gap: 10px; /* Dodaj odstęp między przyciskami */
+  justify-content: center;
+  gap: 10px;
 `;
 
 const Button = styled.button`
@@ -13,13 +13,13 @@ const Button = styled.button`
   background-color: ${props => {
     switch (props.type) {
       case 'good':
-        return '#4CAF50'; /* Zielony dla 'good' */
+        return '#4CAF50';
       case 'neutral':
-        return '#007acc'; /* Niebieski dla 'neutral' */
+        return '#007acc';
       case 'bad':
-        return '#FF0000'; /* Czerwony dla 'bad' */
+        return '#FF0000';
       default:
-        return '#007acc'; /* Domyślny kolor */
+        return '#007acc';
     }
   }};
   color: #fff;
@@ -31,13 +31,13 @@ const Button = styled.button`
     background-color: ${props => {
       switch (props.type) {
         case 'good':
-          return '#45A049'; /* Kolor tła po najechaniu kursorem dla 'good' */
+          return '#45A049';
         case 'neutral':
-          return '#005c8a'; /* Kolor tła po najechaniu kursorem dla 'neutral' */
+          return '#005c8a';
         case 'bad':
-          return '#D70000'; /* Kolor tła po najechaniu kursorem dla 'bad' */
+          return '#D70000';
         default:
-          return '#005c8a'; /* Domyślny kolor tła po najechaniu kursorem */
+          return '#005c8a';
       }
     }};
   }
